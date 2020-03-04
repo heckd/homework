@@ -1,0 +1,101 @@
+h2 {
+    width: 100%;
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+ul, form, .controls {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    list-style-type: none;
+}
+
+li {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: #73d700;
+    border: 1px solid #73d700;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+li.active {
+    background-color: rgb(255, 173, 0);
+    border: 1px solid rgb(255, 173, 0);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+form {
+    text-align: center;
+}
+
+form > div {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: right;
+}
+
+form > button {
+    background-color: rgb(255, 173, 0);
+    border: 1px solid rgb(255, 173, 0);
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+form input {
+    border-radius: 5px;
+}
+
+form input:focus {
+    border-color: #73d700;
+}
+
+.controls {
+    border: none;
+    text-align: center;
+}
+
+.controls > button {
+    background-color: rgb(117, 117, 117);
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.controls > button.delete {
+    background-color: red;
+    border-color: red;
+}

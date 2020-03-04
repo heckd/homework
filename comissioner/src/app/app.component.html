@@ -1,0 +1,54 @@
+<h1>Commissioner</h1>
+
+<h2>List of available agencies</h2>
+
+<div *ngIf="undefined === agencies">Loading...</div>
+<div *ngIf="undefined !== agencies">
+  <ul>
+    <li *ngFor="let agency of agencies" 
+      [innerHTML]="agency.name"
+      [ngClass]="getItemClass(agency)"
+      (click)="setSelectedAgency(agency)">
+  </li>
+  </ul>
+</div>
+
+<form [formGroup]="createOrUpdateForm" (ngSubmit)="onSubmit(createOrUpdateForm.value)">
+  <h3>Create/Update agency</h3>
+
+  <div>
+    <input id="name" type="text" formControlName="name" placeholder="Name" size="50">
+  </div>
+
+  <div>
+    <input id="country" type="text" formControlName="country" placeholder="Country" size="50">
+  </div>
+
+  <div>
+    <input id="countryCode" type="text" formControlName="countryCode" placeholder="Country Code" size="50">
+  </div>
+
+  <div>
+    <input id="city" type="text" formControlName="city" placeholder="City" size="50">
+  </div>
+
+  <div>
+    <input id="street" type="text" formControlName="street" placeholder="Street" size="50">
+  </div>
+
+  <div>
+    <input id="settlementCurrency" type="text" formControlName="settlementCurrency" placeholder="Settlement Currency" size="50">
+  </div>
+
+  <div>
+    <input id="contactPerson" type="text" formControlName="contactPerson" placeholder="Contact Person" size="50">
+  </div>
+
+  <button class="button" type="submit">Save</button>
+
+</form>
+
+<div class="controls">
+  <button class="delete button" (click)="deleteSelectedAgency()">Delete</button>
+  <button class="button" (click)="clearSelectedAgency()">Reset</button>
+</div>
