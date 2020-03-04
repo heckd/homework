@@ -19,7 +19,7 @@ Run:
 
 Then inside the docker container, go to directory /var/homework and run:
 
-```http-server dist/commissioner```
+```http-server dist/commissioner -p 4200```
 
 
 ```java -jar jar/demo-0.0.1-SNAPSHOT.jar```
